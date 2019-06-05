@@ -1,0 +1,23 @@
+{
+  "name": "startup-pitch-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akinhwan/Startup-Pitch-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akinhwan/Startup-Pitch-Generator/issues"
+  },
+  "homepage": "https://github.com/akinhwan/Startup-Pitch-Generator#readme",
+  "dependencies": {
+    "bulma": "^0.7.5",
+    "serverless-python-requirements": "^4.3.0"
+  }
+}
