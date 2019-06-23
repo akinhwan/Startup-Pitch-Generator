@@ -1155,7 +1155,7 @@ generateBtn.addEventListener("click", e => {
 });
 
 shareTwitter.addEventListener("click", e => {
-  let newHref = "https://twitter.com/intent/tweet?text=" + pitchText.innerText;
+  let newHref = "https://twitter.com/intent/tweet?text=" + pitchText.innerText + '%20🦄%20https://pitchgen.co' + '%20%40akinhwan';
   linkTwitter.href = newHref;
 
   // add links, hashtags, images
