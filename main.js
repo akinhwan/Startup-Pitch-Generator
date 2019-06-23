@@ -1,3 +1,24 @@
+const generateBtn = document.getElementById('generate-btn');
+const pitchText = document.getElementById('pitch-text');
+const max = output.length;
+
+const shareTwitter = document.getElementById('share-twitter');
+const shareFacebook = document.getElementById('share-facebook');
+const linkTwitter = document.getElementById('link-twitter');
+const linkFacebook = document.getElementById('link-facebook');
+
+generateBtn.addEventListener('click', (e) => {
+    let randomNum = Math.floor(Math.random() * Math.floor(max));
+    pitchText.innerText = output[randomNum]
+})
+
+shareTwitter.addEventListener('click', (e) => {
+    let newHref = ('https://twitter.com/intent/tweet?text=' + pitchText.innerText)
+    linkTwitter.href = newHref
+
+    // add links, hashtags, images
+})
+
 const output = ['community powered by blockchain technologies to your inbox partners',
 'the tool for trainers and addresses to help them with mentors',
 'the best way to monetize your chat',
@@ -1137,27 +1158,3 @@ const output = ['community powered by blockchain technologies to your inbox part
 "the easiest way to turn your team ' s best restaurants",
 'your personal assistant to your pocket',
 'create your own online school for your business - card']
-
-// console.log(output);
-
-const generateBtn = document.getElementById('generate-btn');
-const pitchText = document.getElementById('pitch-text');
-const max = output.length;
-
-const shareTwitter = document.getElementById('share-twitter');
-const shareFacebook = document.getElementById('share-facebook');
-const linkTwitter = document.getElementById('link-twitter');
-const linkFacebook = document.getElementById('link-facebook');
-
-generateBtn.addEventListener('click', (e) => {
-    let randomNum = Math.floor(Math.random() * Math.floor(max));
-    console.log(randomNum, max);
-    pitchText.innerText = output[randomNum]
-})
-
-shareTwitter.addEventListener('click', (e) => {
-    let newHref = ('https://twitter.com/intent/tweet?text=' + pitchText.innerText)
-    linkTwitter.href = newHref
-
-    // add links, hashtags, images
-})
