@@ -3,39 +3,69 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Startup Pitch Generator</title>
+    <link rel="shortcut icon" type="image/png" href="/startup-icon.png"/>
+    <!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css"  />
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Open+Sans&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.100.0.min.js"></script> -->
   </head>
+
   <body>
   <section class="section hero is-info is-medium">
-    <div class="container">
-      <h1 class="title">
-        Hello World
+    <div class="container hero-body">
+      <h1 id="main-title" class="title">
+        Startup Pitch Generator
       </h1>
-      <h2 class="subtitle">
+      <!-- <h2 class="subtitle">
           Subtitle 
-      </h2>
+      </h2> -->
       <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
+        Use the <strong>textgenrnn</strong> to help think of your next big idea!
       </p>
-      <button class="button is-large is-success is-rounded has-text-weight-bold">Click here</button>
+      <button id="generate-btn" class="button is-large is-success is-rounded has-text-weight-bold">Generate!</button>
       <div class="columns">  
           <div class="column">    
-              First column  
-            </div>  
-            <div class="column">    
-                Second column  
-            </div>  
-            <div class="column"> 
-                Third column  
-            </div>  
-            <div class="column">    
-                Fourth column  
+            <div class="card">
+              <div class="card-content">
+                <p id="pitch-text" class="title">
+                    ☝️ <br>
+                  Click on the "Generate!" button above to get started!
+                </p>
+                <!-- <p class="subtitle">
+                  Jeff Atwood
+                </p> -->
+              </div>
+              <footer class="card-footer">
+                <p id="share-twitter" class="card-footer-item">
+                  <span>
+                    Share on <a id="link-twitter" href="https://twitter.com/intent/tweet?status=">Twitter</a>
+                  </span>
+                </p>
+                <p id="share-facebook" class="card-footer-item">
+                  <span>
+                    Post on <a id="link-facebook" href="http://www.facebook.com/share.php?u=https://www.akinhwan.site">Facebook</a>
+                  </span>
+                </p>
+              </footer>
             </div>
+          </div>  
         </div>
 
     </div>
   </section>
+  <script src="./main.js"></script>
   </body>
 </html>

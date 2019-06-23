@@ -19,4 +19,35 @@ var/
 # Serverless directories
 .serverless
 
+package
+
+venv
+
 node_modules
+
+package.zip
+
+serverless.yml
+
+.serverless
+
+__pycache__
+
+.vscode
+
+package-lock.json
+
+requirements.txt
+
+betalist_model_weights.hdf5
+
+producthunt_model_weights.hdf5
+
+betalist_model_vocab.json
+
+betalist_output.txt
+
+betalist_output_commas.txt
+
+producthunt_model_vocab.json
+
