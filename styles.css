@@ -113,6 +113,15 @@ strong {
   .card-content {
     padding: 1.5rem;
   }
+
+  #main-title {
+    font-size: 3rem;
+  }
+
+  #pitch-text {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
 }
 
 #finger {
