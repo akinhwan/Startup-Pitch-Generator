@@ -50,6 +50,12 @@
         <button
           id="generate-btn"
           class="button is-large is-success is-rounded has-text-weight-bold"
+          onclick="ga('send', {
+            hitType: 'event',
+            eventCategory: 'Buttons',
+            eventAction: 'Clicked',
+            eventLabel: 'Generate'
+          });"
         >
           Generate!
         </button>
